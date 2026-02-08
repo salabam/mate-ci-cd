@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Display GITHUB_ACTIONS env variable
-        run: echo "The value of GITHUB_ACTIONS is $GITHUB_ACTIONS"
+      - name: Show GITHUB_ACTIONS env variable
+        run: echo "GITHUB_ACTIONS env variable is $GITHUB_ACTIONS"
 
       - name: Show branch and repository names
         run: |
@@ -22,4 +22,4 @@ jobs:
           echo "Branch: ${{ github.head_ref }}"
 
       - name: Show triggering event
-        run: echo "This workflow was triggered by the event -> ${{ github.event_name }}"
+        run: echo "triggered by the event -> ${{ github.event_name }}"
